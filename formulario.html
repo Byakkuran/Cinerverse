@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./logos/logomini.png">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+ 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+
+    <title>©ineverse</title>
+</head>
+<body>
+
+    <header>
+
+        
+
+        <section class="nav">
+
+            <div id="logo"> <img id="logoimage" src="./logos/logo4.png" alt="cineverse"> </div>
+            
+                
+             
+
+            <div class="busqueda"><i class="fa fa-search"></i> <label><input type="search" class="search" placeholder="  Buscar"></label></div>
+            <div class="barbutton"><a href= "./main.html" class="navbutton"><i class="fa fa-home"></i> Principal</a></div>
+            <div class="barbutton"><a href= "./quienes_somos.html" class="navbutton">Quienes somos?</a></div>
+            <div class="barbutton"><a href= "#" class="navbutton">Contacto</a></div>
+            <div class="barbutton"><a href= "#" class="navbutton">Contratacion</a></div>
+        
+             
+
+            
+
+
+        </section>
+
+        <div class="fixbarra"> </div>
+
+
+    </header>
+
+    <section class="bodypage">
+
+        <div class="streamcontent"> 
+
+            <div class="carrouselcontent">
+
+                <div class="formcontainer">
+
+                    <ul class="formulario">
+
+                        <li> 
+                            <div class="form">
+                                
+                                <div class="stepper">
+
+
+                                    
+                                    <div class="progressbar1">
+                                        <div class="circle"><p>1</p></div>
+                                        <div class="circle"><p>2</p></div>
+                                        <div class="circle"><p>3</p></div>
+                                        <div class="circle"><p>4</p></div>
+                                        <div class="circle"><p>5</p></div>
+  
+
+                                    </div>
+
+                                
+                                </div>
+
+                                <p class="formspace">Usuario</p>
+                                <input class="inputform" type="text" id="usuario">
+                                <p class="formspace">Contraseña</p>
+                                <input class="inputform" type="password" id="contraseña">
+                                <p class="formspace">E-mail</p>
+                                <input class="inputform" type="text">
+                                <p class="formspace">
+
+                                    <button id="boton_mover">Siguiente</button>
+
+                                </p>
+  
+
+          
+                            </div>
+        
+                        </li>
+                        <li> 
+                            <div class="form">
+                                
+                                <div class="stepper">
+
+                                    <div class="progressbar2">
+                                        
+                                        <div class="circle"><p>1</p></div>
+                                        <div class="circle"><p>2</p></div>
+                                        <div class="circle"><p>3</p></div>
+                                        <div class="circle"><p>4</p></div>
+                                        <div class="circle"><p>5</p></div>
+  
+                                        
+                                    </div>
+                                
+
+
+                                </div>
+
+                                <p class="formspace">Tarjeta</p>
+                                <select  class="listadesplegable" >
+                                    <option value="">Visa</option>
+                                    <option value="">Master Card</option>
+                                    <option value="">Otra</option>
+                                </select>
+                                <p class="formspace">Numero</p>
+                                <input class="inputform" type="text">
+                                <p class="formspace">Vencimiento</p>
+                                <input class="inputform" type="text">
+                                
+                                <p class="formspace">
+
+                                    <button id="boton_regresar">Anterior</button>
+                                    <button id="boton_mover2">Siguiente</button>
+
+                                </p>
+
+                            </div>
+        
+                        </li>
+                        <li> 
+                            <div class="form">
+                                
+                                <div class="stepper">
+
+                                    <div class="progressbar3">
+                                        
+                                        <div class="circle"><p>1</p></div>
+                                        <div class="circle"><p>2</p></div>
+                                        <div class="circle"><p>3</p></div>
+                                        <div class="circle"><p>4</p></div>
+                                        <div class="circle"><p>5</p></div>
+  
+                                        
+                                    </div>
+                                
+
+
+                                </div>
+
+                                <div class="encolumnado_form">
+
+                                    <div class="insdeform">
+                                        <p class="formspace">Cantidad de pantallas</p>
+                                        <select  class="listadesplegable" id="pantallas" >
+                                            <option value="0"> </option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+        
+                                        </select>
+                                        <p class="formspace" >Resolucion</p>
+                                        <select  class="listadesplegable" id="resolucion">
+                                            <option value="0"> </option>
+                                            <option value="1">320p</option>
+                                            <option value="2">520p</option>
+                                            <option value="3">720p</option>
+                                            <option value="4">1024p</option>
+                                            <option value="5">2048p</option>
+                                            <option value="6">4k</option>
+                                            <option value="7">4k+3D</option>
+        
+                                        </select>
+                                        <p class="formspace">Contenido multi lenguaje</p>
+                                        <select  class="listadesplegable" id="idiomasino">
+                                            <option value="1"> </option>
+                                            <option value="2">Si</option>
+                                            <option value="3">No</option>
+        
+                                        </select>
+                                        
+                                        <p class="formspace">
+        
+                                            <button id="boton_regresar2">Anterior</button>
+                                            <button id="boton_mover3">Siguiente</button>
+        
+                                        </p>
+        
+        
+
+                                    </div>
+                                    
+                                    <div class="price">
+
+                                        
+                                        <p class="formspaceprice">Price</p>
+                                        <div class="pricedisplay">
+                                            <p class="theprice">9999 $</p>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+
+
+                            </div>
+        
+                        </li>
+                        <li> 
+                            <div class="form">
+                                
+                                <div class="stepper">
+
+                                    <div class="progressbar4">
+                                        
+                                        <div class="circle"><p>1</p></div>
+                                        <div class="circle"><p>2</p></div>
+                                        <div class="circle"><p>3</p></div>
+                                        <div class="circle"><p>4</p></div>
+                                        <div class="circle"><p>5</p></div>
+  
+                                        
+                                    </div>
+                                
+
+
+                                </div>
+
+                                
+                                <div class="encolumnado_form">
+
+                                    <div class="insdeform">
+
+                                        <p class="formspace">Restriccion de ip</p>
+                                        <select  class="listadesplegable" id="restriccionip">
+                                            <option value="1"> </option>
+                                            <option value="2">No</option>
+                                            <option value="3">Si</option>
+        
+        
+                                        </select>
+                                        <p class="formspace">Avan premier</p>
+                                        <select  class="listadesplegable" id="avanpremier" >
+        
+                                            <option value="1"> </option>
+                                            <option value="2">1</option>
+                                            <option value="3">Ilimitadas</option>
+                                            <option value="4">No</option>
+        
+        
+        
+                                        </select>
+                                        <p class="formspace">Contenido descargable</p>
+                                        <select  class="listadesplegable" id="contenidodescargable">
+                                            <option value="1"> </option>
+                                            <option value="2">Si</option>
+                                            <option value="3">No</option>
+        
+                                        </select>
+        
+                                        <p class="formspace">
+        
+                                            <button id="boton_regresar3">Anterior</button>
+                                            <button id="boton_mover4">Siguiente</button>
+        
+                                        </p>
+        
+
+                                    </div>
+                                    
+                                    <div class="price">
+
+                                        
+                                        <p class="formspaceprice">Price</p>
+                                        <div class="pricedisplay">
+                                            <p class="theprice">9999 $</p>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+
+
+                            </div>
+        
+                        </li>
+                        <li> 
+                            <div class="form" id="resumeimprimible">
+                                
+                                <div class="stepper">
+
+                                    <div class="progressbar5">
+                                        
+                                        <div class="circle"><p>1</p></div>
+                                        <div class="circle"><p>2</p></div>
+                                        <div class="circle"><p>3</p></div>
+                                        <div class="circle"><p>4</p></div>
+                                        <div class="circle"><p>5</p></div>
+  
+                                        
+                                    </div>
+                                
+
+
+                                </div>
+
+                                
+                                <p class="formspace">User</p>
+                                <div class="infospace">
+                                    
+                                    <p id="userresume">test</p>
+                                    
+                                </div>
+                                <p class="formspace">Contraseña</p>
+                                <div class="infospace">
+                                
+                                    <p id="contraseñaresume">test</p>
+                                    
+                                </div>
+                                <p class="formspace">Total del plan</p>
+                                <div class="infospace">
+                                    
+                                    <p class="theprice">9999 $</p>
+                                    
+                                </div>
+
+                                <p class="formspace">
+
+                                    <button id="boton_regresar4">Anterior</button>
+                                    <button id="descarga">Descargar Copia</button>
+
+                                </p>
+
+                            </div>
+        
+                        </li>
+                    </ul>
+                    
+
+
+
+
+                    
+
+                </div>
+
+
+            </div>
+            <div class="footer">
+
+                <div id="separador"></div>
+
+                <div class="footerbutton"><a href="" target="_blank"><i id="twitter" class="fa fa-twitter"></i></a></div>
+                <div class="footerbutton"><a href="" target="_blank"><i id="facebook" class="fa fa-facebook-square"></i></a></div>
+                <div class="footerbutton"><a href="" target="_blank"><i id="instagram" class="fa fa-instagram"></i></a></div>
+
+            </div>
+
+        </div>
+    </section>
+    
+
+
+
+
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+<script src="./button.js"></script>
+</html>
