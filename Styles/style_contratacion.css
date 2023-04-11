@@ -1,0 +1,278 @@
+html,body{
+    zoom: 70%;
+    height: 110%;
+    margin: 0%;    
+    background-image: black;
+}
+
+body::-webkit-scrollbar{
+    width:15px;
+    background-color: black;
+}
+
+body::-webkit-scrollbar-thumb{
+    background:rgb(217, 10, 103);
+    border-radius: 30px;
+}
+
+
+*,
+
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbutton:after{  /*seteamos la animacion de los nav button */
+    content: "";
+    position:absolute;
+    background-color: rgb(217, 10, 103);
+    height: 2px;
+    width: 0px;
+    left: 0;
+    top: 0;
+    transition: 0.3s;
+    margin-top: 60px; /*controla altura */
+}
+
+.navbutton{
+    color: rgba(241, 241, 241, 0.756);
+}
+
+.navbutton:hover{
+    color: white;
+}
+
+.navbutton:hover:after{ /* controla la animacion hover de los nav button */
+    width: 100px;
+}
+
+
+*{
+    font-size: 40px;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1.5px;
+}
+
+.barbutton{
+    color: whitesmoke;
+    background-color: black;
+    line-height: 150px; 
+}
+
+.footerbutton{
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    line-height: 150px; 
+    text-align: right;
+    margin-left: 10%;
+}
+
+
+footer{
+    background-color: transparent;
+    height: 5%;
+    width: 100%;
+}
+
+#separador{
+    width: 60%;
+    height: 30px;
+    background-color: transparent;
+}
+
+.nav{
+    position:fixed;
+    align-items: center;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    width: 100%;
+    gap: 20vh;
+}
+
+.nav *{
+    font-size: 6vh;
+}
+
+#logo{
+    line-height: 0px;
+    text-align: center;
+    width: 10vh;
+    height: 26vh;
+    background-color: red;
+}
+
+
+
+#logoimage{
+    line-height: 200px;
+    padding: 0%;
+    margin: 0%;
+    height: 26vh;
+    width:  26vh;
+    background-color: black;
+}
+
+a{
+    text-decoration: none;
+    background-color: transparent;
+    position: relative;
+    padding: 0 10px;
+}
+
+i{
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+}
+
+.busqueda{
+    line-height: 10vh;
+    background-color: transparent;
+    align-content: center;
+    height: 0vh;
+    margin-left: 30vh;
+    margin-right: 30vh;
+    margin-top: -10vh;
+}
+
+.search{
+    border: none;
+    outline: none;
+    align-self: center;
+    width: 500px;
+    background-color: black
+}
+
+.bodypage{ /* aca estaria todo el contenido principal debajo de la barra main */
+    display: flex;
+    flex-direction: row;
+    background-color: blue;
+    width: 100%;
+    height: 100%;
+}
+
+
+.streamcontent{ /* contiene todo lo que esta al lado de la barra de categorias */
+    display: flex;
+    flex-direction: column;
+    line-height: 700px;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    overflow: hidden;
+}
+
+.carrouselcontent{ /* aca se inicia tambien la animacion de background */
+    margin-top: 30px;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(90deg,rgb(18, 5, 5) , rgb(72, 6, 6),rgb(18, 5, 5) 100%);
+    background-size: 500%;
+    background-position: 0%;
+    animation: gradiante 10s ease infinite;
+}
+
+
+@keyframes gradiante {
+
+    0%{
+        background-position: 0%;
+    }
+
+    100%{
+        background-position: 125%;
+    }
+
+}
+
+.footer{
+    display:flex;
+    flex-direction: row;
+    height: 10%;
+    width: 100%;
+    background-color: rgb(27, 2, 20);
+    z-index: 9999;
+}
+
+header{
+    position: fixed; /*lo que tenia que ir fixed era el header no hacia falta con el class nav*/
+    z-index: 10  ; /*esto arregla que las imagnes pasen por encima de la barra*/
+}
+
+
+
+ul{ 
+    list-style: none;
+}
+
+.fixbarra{
+    background-color: magenta;
+    width: 100%;
+    height: 120px;
+}
+
+.new_division{  /*contiene el texto y el video de esta seccion */
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    background-color: transparent; /*change color for debug*/
+    height: 106%;
+    width: 100%;
+    margin-bottom: 30%;
+    z-index: 1;
+}
+
+#twitter,
+#facebook,
+#instagram{
+    color: rgb(210, 136, 204);
+}
+
+.preciocontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content:safe;
+    background-color: rgb(56, 14, 14);
+    width: 23%;
+    height: 70%;
+    margin-left: 7.5%;
+    margin-top: 9%;
+    line-height: 0.0;
+    text-align: center;
+    border-radius: 40px;
+    filter:blur( 0px);
+    opacity: 0.7;
+}
+
+.contenidoprecio{
+    margin-left: 50px;
+    margin: 30px;
+}
+
+#spacing{ /*controla inicial del box conedor del precio y el contenido */
+    margin-top: 70px;
+}
+
+#Precio1 {
+    color: rgb(254, 1, 56);
+}
+
+#Precio2 {
+    color: rgb(254, 1, 56);
+}
+
+.pricebox{
+    position:absolute;
+    background-color: black;
+    margin-top: 800px;
+    width: 100%;
+}
+
+
+
