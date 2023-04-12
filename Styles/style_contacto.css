@@ -1,0 +1,414 @@
+html,body{
+
+    zoom: 70%;
+
+    height: 110%;
+    margin: 0%;    
+    background-image: black;
+
+
+}
+
+body::-webkit-scrollbar{
+    width:15px;
+    background-color: black;
+}
+
+body::-webkit-scrollbar-thumb{
+    background:rgb(217, 10, 103);
+    border-radius: 30px;
+    
+}
+
+
+*,
+
+*:before,
+*:after {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbutton:after{  /*seteamos la animacion de los nav button */
+    content: "";
+    position:absolute;
+    background-color: rgb(217, 10, 103);
+    height: 2px;
+    width: 0px;
+    left: 0;
+    top: 0;
+    transition: 0.3s;
+    margin-top: 60px; /*controla altura */
+}
+
+.navbutton{
+    color: rgba(241, 241, 241, 0.756);
+    
+}
+
+.navbutton:hover{
+    color: white;
+}
+
+.navbutton:hover:after{ /* controla la animacion hover de los nav button */
+    width: 100px;
+    
+}
+
+
+*{
+    font-size: 40px;
+    
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1.5px;
+}
+
+
+
+.barbutton{
+
+    color: whitesmoke;
+    background-color: black;
+    line-height: 150px; 
+    
+    
+
+
+}
+
+.footerbutton{
+
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    line-height: 150px; 
+    text-align: right;
+    margin-left: 10%;
+    
+
+}
+
+.container{
+
+   
+    background-color: yellow;
+    display: flex;
+    flex-direction: row;
+    width: 400vh;
+    height: 24vh;
+
+}
+
+.container *{
+
+    font-size: 6vh;
+
+}
+
+.container2{
+
+    display:flex;
+    flex-direction: row;
+    background-color: #25060a;
+
+}
+
+
+
+footer{
+    background-color: transparent;
+    height: 5%;
+    width: 100%;
+}
+
+#separador{
+
+    width: 60%;
+    height: 30px;
+    background-color: transparent;
+}
+
+.nav{
+
+    position:fixed;
+    align-items: center;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    width: 100%;
+    gap: 20vh;
+}
+
+.nav *{
+
+    font-size: 6vh;
+}
+
+#logo{
+    
+    line-height: 0px;
+    text-align: center;
+    width: 10vh;
+    height: 26vh;
+    background-color: red;
+}
+
+#contenido{
+
+    width: 90%;
+    height: 20%;
+    color: red;
+}
+
+#logoimage{
+
+    line-height: 200px;
+    padding: 0%;
+    margin: 0%;
+    height: 26vh;
+    width:  26vh;
+    background-color: black;
+    
+
+}
+
+a{
+
+    text-decoration: none;
+    background-color: transparent;
+    position: relative;
+    padding: 0 10px;
+
+}
+
+i{
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+}
+
+.busqueda{
+    line-height: 10vh;
+    background-color: transparent;
+    align-content: center;
+    height: 0vh;
+    margin-left: 30vh;
+    margin-right: 30vh;
+    margin-top: -10vh;
+
+}
+
+.search{
+
+    border: none;
+    outline: none;
+    align-self: center;
+    width: 500px;
+    background-color: black
+    
+    
+}
+
+
+.bodypage{ /* aca estaria todo el contenido principal debajo de la barra main */
+    display: flex;
+    flex-direction: row;
+    background-color: blue;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.carrouselcontent{ /* aca se inicia tambien la animacion de background */
+    margin-top: 30px;
+    
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(90deg,rgb(18, 5, 5) , rgb(72, 6, 6),rgb(18, 5, 5) 100%);
+    background-size: 500%;
+    background-position: 0%;
+    animation: gradiante 10s ease infinite;
+}
+
+
+@keyframes gradiante {
+
+    0%{
+        background-position: 0%;
+    }
+
+    100%{
+        background-position: 125%;
+    }
+
+}
+
+.footer{
+    
+    display:flex;
+    flex-direction: row;
+    height: 10%;
+    width: 100%;
+    background-color: rgb(27, 2, 20);
+    z-index: 9999;
+}
+
+
+header{
+    position: fixed; /*lo que tenia que ir fixed era el header no hacia falta con el class nav*/
+    z-index: 10  ; /*esto arregla que las imagnes pasen por encima de la barra*/
+   
+}
+
+
+@keyframes moveLeft {
+    0% {left:0;}
+    10% {left:0;}
+    
+    15% {left:-735px;}
+    35% {left:-735px;}
+
+    40% {left:-1470px;}
+    60% {left:-1470px;}
+
+    65% {left:-2210px;}
+    85% {left:-2210px;}
+
+    90% {left:-2940px;}
+    100% {left:-2940px;}
+
+  }
+
+  @keyframes moveLeft2 {
+    0% {left:0;}
+    10% {left:0;}
+    
+    15% {left:-735px;}
+    35% {left:-735px;}
+
+    40% {left:-1470px;}
+    60% {left:-1470px;}
+
+    65% {left:-2210px;}
+    85% {left:-2210px;}
+
+    90% {left:-2940px;}
+    100% {left:-2940px;}
+
+  }
+
+
+.fixbarra{
+    background-color: magenta;
+    width: 100%;
+    height: 120px;
+}
+
+
+#twitter,
+#facebook,
+#instagram{
+    color: rgb(210, 136, 204);
+}
+
+.formcontainer{
+
+
+        display: flex;
+        flex-direction: row;
+        position:absolute; /*esto evita que desplaze el footer*/
+        background-color: transparent; /*change color for debug*/
+        height: 106%;
+        width: 250vh; /* limita el contenido del form */
+        margin-bottom: 30%;
+        margin-left: 23%; /*controla la posicion del formulario principal*/
+        z-index: 1;
+        gap: 0%;
+        overflow: hidden; /* OCULTA el resto del formulario */
+
+}
+
+.form{
+
+
+    background-color: rgb(171, 43, 43);
+    display: flex;
+    flex-direction: column;
+    
+    margin-top: 10%; /* controla la posicion horizontal del form */
+    margin-left: -0%; /* controla el avanze del formulario entre PASSOS FUNCION PRINCIPAL */
+    
+    border-radius: 30px;
+    width: 250vh;
+    height:180vh;
+    text-align: center;
+    align-items: center;
+    gap:3%;
+    z-index: 0;
+
+}
+
+.form *{
+ 
+ font: red;
+ font-size: 6vh;
+}
+
+
+.inputform{
+    background-color: black;
+    border-radius: 20px;
+    border-style: none;
+    width: 70%;
+    height: 10%;
+    text-align: center;
+}
+
+.formcontent{ /*este contiene los componentes del form*/
+    background-color: pink;
+    display: flex;
+   
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.1%;
+       
+
+    height: 80%;
+    width: 20em;
+    
+}
+
+.formspace{
+    background-color: transparent;
+    line-height: 11vh;
+    display: flex;
+    flex-direction: row;
+    gap:40%;
+}
+
+
+
+.formspace button:active + .form {
+
+    margin-left: -10%;
+
+}
+
+.formspace button{
+    margin-top: 5vh;
+    color: white;
+    background-color: black;
+    width: 80vh;
+    height: 15vh;
+    border-radius: 30vh;
+}
+
+
+
+
+
