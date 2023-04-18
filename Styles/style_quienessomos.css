@@ -270,10 +270,8 @@ i{
     
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(90deg,rgb(18, 5, 5) , rgb(72, 6, 6),rgb(18, 5, 5) 100%);
-    background-size: 500%;
-    background-position: 0%;
-    animation: gradiante 10s ease infinite;
+    background-color: rgb(23, 3, 5);
+
 }
 
 
@@ -359,17 +357,18 @@ ul{
     z-index: 1;
 }
 
-.video{
-    position:relative;
-    width: 500px;
-    height: 700px;
-    background-color: black;
-    margin-top: 13%;
-    margin-left: 10%;
+.video {
+    position: relative;
+    width: 900px;
+    height: 900px;
+    background-color: transparent;
+    margin-top: 10%;
+    margin-left: 5vh;
     z-index: 3;
     text-align: center;
     border-radius: 40px;
-}
+  }
+  
 
 
 #twitter,
@@ -378,10 +377,22 @@ ul{
     color: rgb(210, 136, 204);
 }
 
+.spot{
+    width: 300vh;
+    height: 400vh;
+}
+video {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 1vh;
+  }
 
-
-
-
+  video::-webkit-media-controls-start-playback-button,
+  video::-webkit-media-controls-play-button,
+  video::-webkit-media-controls-panel {
+     display: none !important;
+  }
 
 
 
